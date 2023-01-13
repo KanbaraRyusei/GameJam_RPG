@@ -9,6 +9,14 @@ public class Encounter : MonoBehaviour, IEncounter
 
     private bool _isEncount = false;
 
+    private void Awake()
+    {
+        if(_isEncount)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     public void Encount()
     {
         _isEncount = true;
