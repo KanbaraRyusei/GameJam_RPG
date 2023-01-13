@@ -37,6 +37,7 @@ public class BattleView : MonoBehaviour
         {
             var image = Instantiate(new GameObject()).AddComponent<Image>();
             image.transform.SetParent(_enemyParent);
+            image.raycastTarget = false;
             _enemyImage[i] = image;
             _enemyImage[i].sprite = sprites[i];
         }

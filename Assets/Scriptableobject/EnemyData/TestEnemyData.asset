@@ -15,7 +15,7 @@ MonoBehaviour:
   _enemySprite: {fileID: 21300000, guid: f3463cd1736eba546ba0cc0c2fd5ae74, type: 3}
   _level: 1
   _name: "\u9B54\u738B\u30B3\u30F3\u30C9\u30FC"
-  _attack: 3
+  _attack: 6
   _defense: 3
   _speed: 5
   _hP: 50

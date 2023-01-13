@@ -20,5 +20,6 @@ public class Encounter : MonoBehaviour, IEncounter
     public void Encount()
     {
         _isEncount = true;
+        SceneLoder.LoadScene(_sceneName);
     }
 }
