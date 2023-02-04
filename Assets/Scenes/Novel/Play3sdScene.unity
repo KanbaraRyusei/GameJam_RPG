@@ -1575,7 +1575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bffdf8e809ebd439aaf9f444d2ea04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  story: {fileID: 11400000, guid: 41b5fd7068d765b4fa762b22c6761ffd, type: 2}
+  story: {fileID: 11400000, guid: 215c2d18e5fe681438cb694785c45ccf, type: 2}
   characterNameTxt: {fileID: 2053690587}
   dialogueTxt: {fileID: 1236659805}
   characterImg: {fileID: 1548648291}
@@ -1590,7 +1590,7 @@ MonoBehaviour:
   choiceBtn2: {fileID: 1897164524}
   choiceBtn3: {fileID: 1883126466}
   endScreen: {fileID: 1928461400}
-  mainMenu: Assets/VNCreator/_Demo/Scenes/MainMenu.unity
+  mainMenu: Assets/Scenes/Battle/BattleScene 2.unity
 --- !u!4 &1154720802
 Transform:
   m_ObjectHideFlags: 0
@@ -2235,6 +2235,7 @@ GameObject:
   - component: {fileID: 1682216594}
   - component: {fileID: 1682216593}
   - component: {fileID: 1682216592}
+  - component: {fileID: 1682216595}
   m_Layer: 5
   m_Name: RestartBtn
   m_TagString: Untagged
@@ -2306,7 +2307,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1682216593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1682216595}
+        m_TargetAssemblyTypeName: NovelSceneChanger, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BattleScene 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1682216593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2345,6 +2358,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682216590}
   m_CullTransparentMesh: 1
+--- !u!114 &1682216595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682216590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fef5d6ddf4aa31439b00f0ba3d2f3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1844119502
 GameObject:
   m_ObjectHideFlags: 0

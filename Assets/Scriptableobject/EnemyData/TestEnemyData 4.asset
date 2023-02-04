@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 434775500aec96742b49f29f5bf2e9ad, type: 3}
-  m_Name: TestEnemyData
+  m_Name: TestEnemyData 4
   m_EditorClassIdentifier: 
-  _enemySprite: {fileID: 21300000, guid: f3463cd1736eba546ba0cc0c2fd5ae74, type: 3}
+  _enemySprite: {fileID: 21300000, guid: a90420b2078711b4a9798f76421e3cb2, type: 3}
   _level: 1
-  _name: "\u9B54\u738B\u30B3\u30F3\u30C9\u30FC"
+  _name: "\u30B4\u30D6\u30EA\u30F3"
   _attack: 6
   _defense: 3
   _speed: 5

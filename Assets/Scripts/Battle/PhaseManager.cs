@@ -56,14 +56,19 @@ public class PhaseManager
 
     private void AliveCheckPhase()
     {
+        if(BattleManager.Instance.Enemies.Count == 0)
+        {
+            BattleManager.Instance.EndBattle();
+        }
         for(int i = 0; i < BattleManager.Instance.Enemies.Count; i++)
         {
             if(BattleManager.Instance.Enemies[i].HP > 0)
             {
-                return;
+                continue;
             }
+            BattleManager.Instance.DeathEnemy(BattleManager.Instance.Enemies[i]);
         }
-        if(BattleManager.Instance.Player.HP >= 0)
+        if(BattleManager.Instance.Player.HP > 0)
         {
             NextPhase();
         }
