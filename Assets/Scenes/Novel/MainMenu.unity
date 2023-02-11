@@ -778,7 +778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36.538}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -413, y: -365}
+  m_AnchoredPosition: {x: -957, y: -1002}
   m_SizeDelta: {x: 1821.2998, y: 979.2693}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &330266734
@@ -2404,7 +2404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 38.462}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 481, y: -399}
+  m_AnchoredPosition: {x: 1358, y: -653}
   m_SizeDelta: {x: 1821.2998, y: 979.2693}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145452465
@@ -3675,9 +3675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'VNCreator
-
-    Demo'
+  m_Text: "\u30A4\u30F3\u30D0\u30FC\u30B9"
 --- !u!222 &1859317179
 CanvasRenderer:
   m_ObjectHideFlags: 0
