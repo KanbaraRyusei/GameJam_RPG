@@ -13,6 +13,9 @@ public class BattleManager : SingletonMonoBehaviour<BattleManager>
     [SerializeField]
     private BattleView _battleView;
 
+    [SerializeField]
+    private string _nextSceneName;
+
     private BattlePlayer _player;
 
     private List<BattleEnemy> _enemys = new List<BattleEnemy>();
@@ -49,6 +52,15 @@ public class BattleManager : SingletonMonoBehaviour<BattleManager>
         _characters.Add(characterBase);
         Debug.Log(characterBase.Name + "‚ð“o˜^‚µ‚Ü‚µ‚½");
     }
+
+    public void DeathEnemy(BattleEnemy battleEnemy)
+    {
+        _enemys.Remove(battleEnemy);
+        if(_enemys.Count == 0)
+        {
+            EndBattle();
+        }
+    }
     
     public void CharacterSpeedSort()
     {
@@ -69,6 +81,6 @@ public class BattleManager : SingletonMonoBehaviour<BattleManager>
     public void EndBattle()
     {
         _player.SetData();
-        SceneLoder.LoadBeforeScene();
+        SceneLoder.LoadScene(_nextSceneName);
     }
 }

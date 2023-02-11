@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _battleView: {fileID: 465663686}
+  _nextSceneName: Play4thScene
 --- !u!114 &106333530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,7 +946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623cf345b7631d24b8785fa072f62604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyData: {fileID: 11400000, guid: 9dffe10dd00fbc748b4485195d22f462, type: 2}
+  _enemyData: {fileID: 11400000, guid: d61cf8a6b23169a4e9741ede2781420f, type: 2}
 --- !u!4 &773147705
 Transform:
   m_ObjectHideFlags: 0
@@ -1269,7 +1270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623cf345b7631d24b8785fa072f62604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyData: {fileID: 11400000, guid: 9dffe10dd00fbc748b4485195d22f462, type: 2}
+  _enemyData: {fileID: 11400000, guid: d61cf8a6b23169a4e9741ede2781420f, type: 2}
 --- !u!4 &1176078098
 Transform:
   m_ObjectHideFlags: 0
@@ -1359,7 +1360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623cf345b7631d24b8785fa072f62604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyData: {fileID: 11400000, guid: 9dffe10dd00fbc748b4485195d22f462, type: 2}
+  _enemyData: {fileID: 11400000, guid: d61cf8a6b23169a4e9741ede2781420f, type: 2}
 --- !u!4 &1379666411
 Transform:
   m_ObjectHideFlags: 0

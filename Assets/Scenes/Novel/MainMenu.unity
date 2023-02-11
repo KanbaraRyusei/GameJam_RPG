@@ -2180,7 +2180,7 @@ MonoBehaviour:
   continueBtn: {fileID: 542433820}
   optionsMenuBtn: {fileID: 1827910312}
   quitBtn: {fileID: 1702857329}
-  playScene: Assets/VNCreator/_Demo/Scenes/PlayScene.unity
+  playScene: Assets/Scenes/Novel/PlayScene.unity
   optionsMenu: {fileID: 846435128}
   mainMenu: {fileID: 1175850012}
 --- !u!4 &1025409545

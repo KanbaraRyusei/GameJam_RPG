@@ -41,6 +41,11 @@ public class BattleEnemy : CharacterBase
         var d = Calculator.DamageCalculation(damage, _defense);
         _hp -= d;
         Debug.Log(_name + "‚Í" + d + "ƒ_ƒ[ƒW‚ğó‚¯‚½");
+        if(_hp <= 0)
+        {
+            Debug.Log($"{_name}‚Í“|‚ê‚½");
+            BattleManager.Instance.DeathEnemy(this);
+        }
     }
 
     public override void SelectAction()
