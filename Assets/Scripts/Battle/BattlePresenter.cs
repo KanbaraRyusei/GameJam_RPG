@@ -165,11 +165,20 @@ public class BattlePresenter : MonoBehaviour
 
                         await UniTask.Delay(1000);
 
-                        foreach (var enemy in BattleManager.Instance.Enemies)
+                        
+                        try
                         {
-                            _battlePlayer.ReciveDamage(enemy.Attack);
-                            await UniTask.Delay(1000);
+                            foreach (var enemy in BattleManager.Instance.Enemies)
+                            {
+                                _battlePlayer.ReciveDamage(enemy.Attack);
+                                await UniTask.Delay(1000);
+                            }
                         }
+                        catch(NullReferenceException)
+                        {
+                            
+                        }
+                        
 
                         _battlePlayer.SetActionPhase(PlayerSelectActionPhase.SelectAction);
 

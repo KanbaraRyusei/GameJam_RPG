@@ -6,7 +6,7 @@ using System.Linq;
 public class BattleManager : SingletonMonoBehaviour<BattleManager>
 {
     public BattlePlayer Player => _player;
-    public IReadOnlyList<BattleEnemy> Enemies => _enemys;
+    public IReadOnlyList<BattleEnemy>? Enemies => _enemys;
     public IReadOnlyList<CharacterBase> Characters => _characters;
     public PhaseManager PhaseManagerInstance => _phaseManager;
 
@@ -24,6 +24,10 @@ public class BattleManager : SingletonMonoBehaviour<BattleManager>
 
     private PhaseManager _phaseManager;
 
+    protected override void Awake()
+    {
+        base.Awake();
+    }
 
     private void Start()
     {
